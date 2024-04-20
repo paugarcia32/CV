@@ -4,27 +4,26 @@
 
 #cvProject(
   title: [It Odyssey],
-  society: [Web Blog],
+  society: [Aplicación Web],
   date: [2023 - Actualidad],
   description: list(
-    [Aprendizaje y aplicación los principios S.O.L.I.D y Clean Code],
-    [Typescript & NextJS],
-    [Despliegue en producción]
+    [Web Blog donde publico artículos relacionados con mi experiencia en el sector IT],
   ),
   url: "https://www.itodyssey.dev",
-  // tags: ("Tags Example here", "Dataiku", "Snowflake", "SparkSQL")
+  tags: ("Web", "FrontEnd", "NextJS", "TS", "S.O.L.I.D")
 
 )
 
 #cvProject(
   title: [EETAC GO],
-  society: [Full Stack WebApp],
+  society: [WebApp Full Stack],
   date: [2022 - 2023],
   description: list(
-    [Proyecto en grupo, usando metodologías Agile y SCRUM],
-    [Flutter, NodeJS, Typescript, MongoDB & Angular],
+    [Aplicación Móvil para nuevos estudiantes del campus],
+    [Desarrollado por un equipo de 5 miembros],
   ),
-  url: "https://github.com/mariaubiergo2/EA-FRONTEND"
+  url: "https://github.com/mariaubiergo2/EA-FRONTEND",
+  tags: ("Mobile", "BackEnd", "Flutter", "TypeScript", "MongoDB", "Agile & SCRUM", "NodeJS")
 
 )
 
