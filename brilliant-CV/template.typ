@@ -361,6 +361,37 @@
   box(width: 1fr, line(stroke: 0.9pt, length: 100%))
 }
 
+
+#let cvProject(
+  title: "Title",
+  society: "Society",
+  description: "Description",
+  date: "Date",
+  url: "",
+  tags: ""
+) = {
+  let ifSocietyFirst(condition, field1, field2) = {
+    return if condition {field1} else {field2}
+  }
+  v(beforeEntrySkip)
+  table(
+    columns: (1fr, auto),
+    inset: 0pt,
+    stroke: none,
+    row-gutter: 6pt,
+    align: auto,
+    {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, link(url)[#title]))},
+    {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location,date))},
+    {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
+
+  )
+  //entryTitleStyle()
+  entryDescriptionStyle(description)
+  entryTagListStyle(tags)
+}
+
+
+
 #let cvTechSkill(
   title: "Title",
   description: "Description",

@@ -1,15 +1,30 @@
 #import "../brilliant-CV/template.typ": *
 
-#cvSection("Projects & Associations")
+#cvSection("Projects")
 
-#cvEntry(
-  title: [Volunteer Data Analyst],
-  society: [ABC Nonprofit Organization],
-  date: [2019 - Present],
-  location: [New York, NY],
+#cvProject(
+  title: [It Odyssey],
+  society: [Web Blog],
+  date: [2023 - Present],
   description: list(
-    [Analyze donor and fundraising data to identify trends and opportunities for growth],
-    [Create data visualizations and dashboards to communicate insights to the board of directors],
-    [Collaborate with other volunteers to develop and implement data-driven strategies]
-  )
+    [Learning amd applying S.O.L.I.D and Clean Code principles],
+    [Typescript & NextJS],
+    [Production deployment]
+  ),
+  url: "https://www.itodyssey.dev",
 )
+
+#cvProject(
+  title: [EETAC GO],
+  society: [Full Stack WebApp],
+  date: [2022 - 2023],
+  description: list(
+    [Team group project, using Agile & SCRUM methodologies],
+    [Flutter, NodeJS, Typescript, MongoDB & angular],
+  ),
+  url: "https://github.com/mariaubiergo2/EA-FRONTEND"
+
+)
+
+
+

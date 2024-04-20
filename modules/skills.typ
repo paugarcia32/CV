@@ -8,11 +8,11 @@
 )
 
 #cvSkill(
-  type: [Tech Stack],
-  info: [Tableau #hBar() Python (Pandas/Numpy) #hBar() PostgreSQL]
+  type: [Soft Skills],
+  info: [Willingness to learn #hBar() Teamwork  #hBar() Agile & SCRUM methodologies #hBar() Problem Solving]
 )
 
 #cvSkill(
   type: [Personal Interests],
-  info: [Swimming #hBar() Cooking #hBar() Reading]
+  info: [Martial Arts #hBar() Electronics #hBar() Reading #hBar() Music]
 )
