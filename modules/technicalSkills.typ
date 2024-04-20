@@ -5,8 +5,8 @@
 #cvTechSkill(
   title: [Programming],
   description: list(
-    [Knowledge of Typescript, Java, C and `C#` along with related libraries and frameworks for backend development, RestAPI and Full Stack applications],
-    [Knowledge of Big Data algorithms and development of quantum circuits using python libraries],
+    [Knowledge of Typescript, Java, Flutter, C and `C#` along with related libraries and frameworks for backend development, RestAPI and Full Stack applications],
+    [Knowledge of Big Data algorithms and development of quantum circuits using Python libraries],
   )
 )
 
