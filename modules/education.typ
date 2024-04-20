@@ -6,7 +6,7 @@
     title: [Bachelor's Degree in Network Engineering],
     society: [UPC - EETAC, Castelldefels],
     date: [2020 - Present],
-    location: [ESP],
+    location: [ES],
     logo: "../src/logos/upc.png",
     description: list(
       [Thesis: Development, analysis and deployment of an IOT sensor network using LoRa]
@@ -17,7 +17,7 @@
     title: [Technological Baccalaureate],
     society: [Col·legi Montserrat, Barcelona],
     date: [2018 - 2020],
-    location: [ESP],
+    location: [ES],
     logo: "../src/logos/cole montse.png",
     description: list(
       [Thesis: Analysis and hacking of NFC cards]
