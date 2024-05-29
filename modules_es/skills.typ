@@ -13,6 +13,6 @@
 )
 
 #cvSkill(
-  type: [Personal Interests],
+  type: [Aficiones],
   info: [Artes Marciales #hBar() Electrónica #hBar() Lectura #hBar() Musica]
 )
