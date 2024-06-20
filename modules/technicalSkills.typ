@@ -22,7 +22,8 @@
 #cvTechSkill(
   title: [Networks],
   description: list(
-    [Network analysis using software such as Omnet++, Mininet, GNS3 or Wireshark as well as protocols involved],
+    [Network analysis using Wireshark as well as the protocols involved in the scenario],
+    [Simulation of real scenarios using software such as Omnet++, Mininet, GNS3 and Contiki],
     [MPLS network configuration with Mikrotik routers],
   )
 )

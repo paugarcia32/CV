@@ -2,4 +2,4 @@
 
 #cvSection("Personal Summary")
 
-I am currently studying the fourth year of the Bachelor’s Degree in Network Engineering at the UPC of Castelldefels. I am a passionate person and very enthusiastic about the world of programming and network management.
+Graduated in Network Engineering from the UPC of Castelldefels, with a solid background in IoT and cybersecurity. Passionate about technology and always willing to learn, I seek to contribute my knowledge and enthusiasm to innovative and challenging projects.

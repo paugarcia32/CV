@@ -9,7 +9,7 @@
     location: [ES],
     logo: "../src/logos/upc.png",
     description: list(
-      [Tesis: Desarrollo, análisis y despliegue de una red de sensores IOT usando LoRa]
+      [Tesis: Plataforma IoT abierta para proyectos de ciencia ciudadana: soluciones de conectividad]
     )
 )
 

@@ -22,7 +22,8 @@
 #cvTechSkill(
   title: [Redes],
   description: list(
-    [Análisis de redes mediante software como Omnet++, Mininet, GNS3 o Wireshark así como protocolos involucrados],
+    [Análisis de redes usando Wireshark así como los protocolos involucrados en el escenario],
+    [Simulación de escenarios reales mediante software como Omnet++, Mininet, GNS3 y Contiki],
     [Configuración de redes MPLS con routers Mikrotik],
   )
 )

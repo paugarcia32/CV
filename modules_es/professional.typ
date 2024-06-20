@@ -4,7 +4,7 @@
 
 #cvEntry(
     title: [Internino de Ciberseguridad],
-    society: [MarshMcLennan],
+    society: [Marsh McLennan],
     logo: "../src/logos/marsh.png",
     date: [2024 - Present],
     location: [Barcelona, ES],
@@ -19,7 +19,7 @@
 #cvEntry(
     title: [Profesor particular],
     society: [Freelance],
-    // logo: "../src/logos/xyz_corp.png",
+    logo: "../src/logos/professor.png",
     date: [2018 - 2021],
     location: [Barcelona, ES],
     description: list(
