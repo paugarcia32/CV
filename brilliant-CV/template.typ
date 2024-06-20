@@ -99,8 +99,8 @@
 )}
 
 #let headerQuoteStyle(str) = {text(
-  size: 10pt,
-  weight: "medium",
+  size: 12pt,
+  weight: "semibold",
   style: "italic",
   fill: accentColor,
   str
@@ -312,8 +312,9 @@
     stroke: none,
     row-gutter: 6mm,
     [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
+    [#headerQuoteStyle(languageSwitch(headerQuoteInternational))],
     [#headerInfoStyle(makeHeaderInfo())],
-    [#headerQuoteStyle(languageSwitch(headerQuoteInternational))]
+
   )
 
 

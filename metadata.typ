@@ -22,7 +22,7 @@
 /* Language-specific */
 // Add your own languages while the keys must match the varLanguage variable
 #let headerQuoteInternational = (
-  "": [Network Engineer student looking for a internship starting from now],
+  "": [Network Engineer],
   "en": [Network Engineer],
   "es": [Ingeniero de Redes],
   "fr": [Analyste de données expérimenté à la recherche d'un emploi à temps plein disponible dès maintenant],
@@ -57,7 +57,7 @@
 
 #let profilePhoto = "../src/foto cv-modified.png" // Leave blank if profil photo is not needed
 
-#let varLanguage = "es" // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
+#let varLanguage = "" // INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 
 #let varEntrySocietyFirst = false // Decide if you want to put your company in bold or your position in bold
 
