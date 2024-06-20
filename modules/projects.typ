@@ -10,8 +10,8 @@
     [Web Blog where I post articles related with my IT journey],
   ),
   url: "https://www.itodyssey.dev",
-  tags: ("Web", "FrontEnd", "NextJS", "TS", "S.O.L.I.D")
-
+  tags: ("Web", "FrontEnd", "NextJS", "TS", "S.O.L.I.D"),
+  logo: "../src/logos/itodyssey.png",
 )
 
 #cvProject(
@@ -23,7 +23,8 @@
     [Developed with a team of 5 members],
   ),
   url: "https://github.com/mariaubiergo2/EA-FRONTEND",
-  tags: ("Mobile", "BackEnd", "Flutter", "TypeScript", "MongoDB", "Agile & SCRUM", "NodeJS")
+  tags: ("Mobile", "BackEnd", "Flutter", "TypeScript", "MongoDB", "Agile & SCRUM", "NodeJS"),
+  logo: "../src/logos/eetacgo.png",
 
 )
 

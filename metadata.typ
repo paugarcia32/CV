@@ -23,8 +23,8 @@
 // Add your own languages while the keys must match the varLanguage variable
 #let headerQuoteInternational = (
   "": [Network Engineer student looking for a internship starting from now],
-  "en": [Network Engineer student looking for a internship starting from now],
-  "es": [Estudiante de Ingeniería Telemática en busca de prácticas],
+  "en": [Network Engineer],
+  "es": [Ingeniero de Redes],
   "fr": [Analyste de données expérimenté à la recherche d'un emploi à temps plein disponible dès maintenant],
   "zh": [具有丰富经验的数据分析师，随时可入职]
 )

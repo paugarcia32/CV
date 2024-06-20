@@ -10,7 +10,8 @@
     [Web Blog donde publico artículos relacionados con mi experiencia en el sector IT],
   ),
   url: "https://www.itodyssey.dev",
-  tags: ("Web", "FrontEnd", "NextJS", "TS", "S.O.L.I.D")
+  tags: ("Web", "FrontEnd", "NextJS", "TS", "S.O.L.I.D"),
+  logo: "../src/logos/itodyssey.png",
 
 )
 
@@ -23,7 +24,8 @@
     [Desarrollado por un equipo de 5 miembros],
   ),
   url: "https://github.com/mariaubiergo2/EA-FRONTEND",
-  tags: ("Mobile", "BackEnd", "Flutter", "TypeScript", "MongoDB", "Agile & SCRUM", "NodeJS")
+  tags: ("Mobile", "BackEnd", "Flutter", "TypeScript", "MongoDB", "Agile & SCRUM", "NodeJS"),
+  logo: "../src/logos/eetacgo.png",
 
 )
 

@@ -3,6 +3,21 @@
 #cvSection("Professional Experience")
 
 #cvEntry(
+    title: [Cybersecurity Intern],
+    society: [MarshMcLennan],
+    logo: "../src/logos/marsh.png",
+    date: [2024 - Actualidad],
+    location: [Barcelona, ES],
+    description: list(
+      [Evaluate cybersecurity maturity using frameworks such as ISO 27001 or NIST, identifying areas for improvement and proposing solutions to achieve an adequate level of security.],
+      [Risk analysis to assess the threats and vulnerabilities faced by critical systems and processes of companies.],
+      [Vulnerability analysis in systems and applications, aiming to identify possible weaknesses and security gaps that could be exploited by attackers.],
+    ),
+
+    //tags: ("Tags Example here", "Dataiku", "Snowflake", "SparkSQL")
+)
+
+#cvEntry(
     title: [Private Professor],
     society: [Freelance],
     //logo: "../src/logos/xyz_corp.png",

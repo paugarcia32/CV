@@ -368,39 +368,97 @@
   description: "Description",
   date: "Date",
   url: "",
-  tags: ""
+  tags: "",
+  logo: "",
 ) = {
   let ifSocietyFirst(condition, field1, field2) = {
     return if condition {field1} else {field2}
   }
+  let ifLogo(path, ifTrue, ifFalse) = {
+    return if varDisplayLogo {
+      if path == "" { ifFalse } else { ifTrue }
+    } else { ifFalse }
+  }
+  let setLogoLength(path) = {
+    return if path == "" { 0% } else { 4% }
+  }
+  let setLogoContent(path) = {
+    return if logo == "" [] else {image(path, width: 100%)}
+  }
   v(beforeEntrySkip)
   table(
-    columns: (1fr, auto),
+    columns: (ifLogo(logo, 4%, 0%), 1fr),
     inset: 0pt,
     stroke: none,
-    row-gutter: 6pt,
     align: auto,
-    {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, link(url)[#title]))},
-    {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location,date))},
-    {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
-
+    column-gutter: ifLogo(logo, 4pt, 0pt),
+    setLogoContent(logo),
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6pt,
+      align: auto,
+      {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, link(url)[#title]))},
+      {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location, date))},
+      {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
+    )
   )
-  //entryTitleStyle()
   entryDescriptionStyle(description)
   entryTagListStyle(tags)
 }
 
-
-
-#let cvTechSkill(
+#let cvEvent(
   title: "Title",
-  description: "Description",
-  tags: ()
+  date: "Date",
+  url: "",
+  logo: "",
+  description: "Description"
 ) = {
-  entryTitleStyle(title)
+  // Función para determinar si se muestra el logo
+  let ifLogo(path, ifTrue, ifFalse) = {
+    return if varDisplayLogo {
+      if path == "" { ifFalse } else { ifTrue }
+    } else { ifFalse }
+  }
+  let setLogoLength(path) = {
+    return if path == "" { 0% } else { 4% }
+  }
+  let setLogoContent(path) = {
+    return if logo == "" [] else {image(path, width: 100%)}
+  }
+
+  v(beforeEntrySkip)
+
+  // Tabla principal con dos columnas: una para el logo y otra para el contenido principal
+  table(
+    columns: (ifLogo(logo, 4%, 0%), 1fr),
+    inset: 0pt,
+    stroke: none,
+    align: horizon,
+    column-gutter: ifLogo(logo, 4pt, 0pt),
+
+    // Columna del logo
+    setLogoContent(logo),
+
+    // Columna del contenido principal
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6pt,
+      align: auto,
+
+      // Filas de la tabla secundaria
+      {entryA1Style(link(url)[#title])},
+      {entryA2Style(date)},
+    )
+  )
+
+  // Estilo de descripción
   entryDescriptionStyle(description)
-  entryTagListStyle(tags)
 }
+
 
 #let cvEntry(
   title: "Title",
@@ -430,7 +488,7 @@
     columns: (ifLogo(logo, 4%, 0%), 1fr),
     inset: 0pt,
     stroke: none,
-    align: horizon,
+    align: auto,
     column-gutter: ifLogo(logo, 4pt, 0pt),
     setLogoContent(logo),
     table(
@@ -440,7 +498,7 @@
       row-gutter: 6pt,
       align: auto,
       {entryA1Style(ifSocietyFirst(varEntrySocietyFirst, society, title))},
-      {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location,date))},
+      {entryA2Style(ifSocietyFirst(varEntrySocietyFirst, location, date))},
       {entryB1Style(ifSocietyFirst(varEntrySocietyFirst, title, society))},
       {entryB2Style(ifSocietyFirst(varEntrySocietyFirst, date,location))},
     )
@@ -448,6 +506,22 @@
   entryDescriptionStyle(description)
   entryTagListStyle(tags)
 }
+
+
+
+
+
+#let cvTechSkill(
+  title: "Title",
+  description: "Description",
+  tags: ()
+) = {
+  entryTitleStyle(title)
+  entryDescriptionStyle(description)
+  entryTagListStyle(tags)
+}
+
+
 
 #let cvSkill(
   type: "Type",
